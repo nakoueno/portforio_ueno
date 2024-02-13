@@ -7,8 +7,16 @@ body{
 .main_img{
     text-align: center;
     vertical-align: middle;
+    margin: 100px 0 73px;
 }
-
+.main_text{
+    text-align: center;
+}
+.main_text span{
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
 .header_inner{
     max-width: 1730px;
     margin: 0 auto;
@@ -16,10 +24,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
     width: 100%;
     box-sizing: border-box;
 }
@@ -30,6 +34,7 @@ body{
 .header_inner nav ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .botton{
     /* 1.形をきめる */
@@ -60,11 +65,9 @@ body{
 #about{
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 852px;
     margin: 30px auto;
-}
-.about1 {
-    width: 30%;
+    padding: 10px;
 }
 .about1 img{
     width: 320px;
@@ -80,7 +83,7 @@ body{
     font-family: "Oswald";
     margin: 30px 0 20px 0;
 }
-#about h3{
+#about p{
     width: 470px;
     font-size: 14px;
     font-family: "Oswald";
@@ -94,10 +97,15 @@ body{
     align-items: center;
     max-width: 820px;
     margin: 100px auto;
+    padding: 10px;
 }
 #line img{
-    height: 22px;
-    width: auto;
+    width: 0 auto;
+}
+#skill{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
 }
 #skill h2{
     text-align: center;
@@ -112,7 +120,7 @@ body{
     gap: 25px;
 }
 #skill li{
-    width: 350px;
+    width: 31%;
     height: 570px;
     border: 1px solid;
     border-radius: 50px;
@@ -124,18 +132,30 @@ body{
     margin: 30px 50px 10px 50px;
 }
 #skill img{
+    display: block;
     text-align: center;
     height: 200px;
     width: auto;
-    margin: 30px;
+    margin: 30px auto;
 }
 #skill p{
-    width: 260px;
+    width: 75%;
     font-size: 14px;
     font-family: "Oswald";
-    margin: 10px 50px;
     line-height: 1.8;
     letter-spacing: 0.1em;
+    margin: 0 auto;
+}
+@media screen and (max-width:910px) {
+    #skill li{
+        height: 610px;
+    }
+}
+
+#works{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
 }
 #works h2{
     text-align: center;
@@ -143,11 +163,16 @@ body{
     font-family: "Oswald";
     margin: 30px 0 20px 0;
 }
+#works .works_img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
 #works img{
     justify-content: center;
     align-items: center;
-    width: 495px;
-    margin: 20px 50px;
+    width: 45%;
+    margin: 20px 0;
 }
 
 
@@ -156,18 +181,17 @@ body{
 
 footer{
     width:100%;
-    height: 377px;
     background-color: #212121;
+    margin: 150px 0 0 0;
 }
 
 .footer{
-    max-width: 500px;
+    max-width: 400px;
     width:100%;
     display: flex;
-    align-items: start;
+    align-items: center;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 85px;
+    padding-top: 75px;
 }
 
 .footer_logo{
@@ -175,12 +199,11 @@ footer{
     margin-right: 50px;
 }
 .footer nav li{
-    font-family: "Oswald", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 21px;
     font-weight: medium;
     color: #FFC2D9;
     border-left:1px solid #FFC2D9;
-    padding:0 50px;
+    padding: 10px 0 10px 50px;
 }
 .footer_sns{
     max-width: 206px;
@@ -189,19 +212,135 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 85px;
+    padding-top: 75px;
+    padding-bottom: 15px;
 }
 .footer_sns img{
-    width: 86px;
-    margin: 20px 50px;
+    width: 45px;
+}
+.copy .botton{
+    /* 1.形をきめる */
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+  /* 2.背景色をきめる */
+    background: #FFC2D9;
+  /* 3.文字の配置をきめる */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* 4.文字のスタイルを設定 */
+    color: #212121;
+    font-size: 15px;
+    font-weight: medium;
 }
 
+.copy .footer_nav ul{
+    display: flex;
+    gap: 10px;
+}
 .copy{
-    margin-bottom: 78px;
+    padding-bottom: 70px;
     text-align: center;
-    font-family: "Oswald", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 14px;
     font-weight: medium;
     color: #FFC2D9;
 }
+
+
+
+
+/* 下層ページ_about */
+#about_page{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+}
+#about_page h2{
+    text-align: left;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 20px 0;
+}
+.about_p{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+}
+.about_p img{
+    width: 33%;
+}
+.about_p p{
+    width: 700px;
+    font-size: 14px;
+    font-family: "Oswald";
+    font-weight: medium;
+    margin: 30px 0 20px 0;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    padding-left: 50px;
+}
+.about_p span{
+    font-size: 30px;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+
+#about_career{
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 10px;
+}
+#about_career h2{
+    text-align: left;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 20px 0;
+}
+.about_career_text{
+    align-items: center;
+    max-width: 860px;
+    border-left:1px solid #212121;
+    border-bottom:1px solid #212121;
+    padding: 0 0 30px 70px;
+    margin: 0 70px;
+}
+.about_career_text p{
+    font-size: 14px;
+    font-family: "Oswald";
+    font-weight: medium;
+    margin: 50px 0 30px 0;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
+.about_career_text span{
+    font-size: 30px;
+    font-family: "Oswald";
+}
+
+#about_interests{
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 10px;
+}
+#about_interests h2{
+    text-align: left;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 0 0;
+}
+.about_interests_img{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 990px;
+    margin: 0 auto;
+    gap: 8%;
+}
+
+.about_interests_img img{
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    margin: 70px 0 0 0;
+}
+
