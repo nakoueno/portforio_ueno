@@ -29,7 +29,7 @@ body{
 }
 .header_inner nav{
     width: 100%;
-    max-width: 430px;
+    max-width: 500px;
 }
 .header_inner nav ul{
     display: flex;
@@ -66,7 +66,7 @@ body{
     display: flex;
     align-items: center;
     max-width: 852px;
-    margin: 30px auto;
+    margin: 150px auto;
     padding: 10px;
 }
 .about1 img{
@@ -81,17 +81,37 @@ body{
     text-align: left;
     font-size: 45px;
     font-family: "Oswald";
-    margin: 30px 0 20px 0;
+    /* margin: 30px 0 20px 0; */
 }
 #about p{
     width: 470px;
     font-size: 14px;
     font-family: "Oswald";
     font-weight: medium;
-    margin: 30px 0 20px 0;
+    margin: 10px 0 40px 0;
     line-height: 1.8;
     letter-spacing: 0.1em;
 }
+.about_botton{
+    margin: 0 auto;
+    align-items: center;
+}
+.about_botton2{
+    font-size: 14px;
+    font-weight: normal;
+	color: #212121;
+	background-color: #FFC2D9;
+	border: solid 1px #212121;
+	border-radius: 20px;
+	padding: 10px 100px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.about_botton2:hover {
+	color: #FFC2D9;
+	background-color: #212121;
+}
+
 #line{
     display: flex;
     align-items: center;
@@ -342,5 +362,169 @@ footer{
     align-items: center;
     width: 28%;
     margin: 70px 0 0 0;
+}
+
+
+
+
+/* 下層ページ_works */
+#works_page{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+}
+#works_page h2{
+    text-align: left;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 50px 0px;
+}
+.works_p{
+    text-align: center;
+}
+.works_p img{
+    max-width: 630px;
+    margin: 0 auto;
+}
+.works_p2{
+    max-width: 827px;
+    margin: 0 auto;
+}
+.works_p2 h3{
+    font-size: 40px;
+    font-family: "Oswald";
+    font-weight: normal;
+    margin: 63px 0;
+}
+.works_p2 table{
+    width: 100%;
+}
+.works_p2 td{
+    vertical-align: top;
+    padding: 0 0 40px 70px;
+}
+
+
+
+
+/* 下層ページ_works */
+#contact_page{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+}
+#contact_page h2{
+    text-align: left;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 50px 0px;
+}
+.c-form {
+	max-width: 650px;
+	margin: 0 auto;
+}
+.c-form__item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+	padding: 10px;
+}
+.c-form__label {
+	width: 90%;
+}
+.c-form__input {
+    background-color: #FFC2D9;
+	width: 90%;
+	font-size: 14px;
+	border: solid 1px #212121;
+	border-radius: 5px;
+}
+.c-form__input:focus-visible {
+	outline: #212121 auto 1px;
+}
+.c-form__required {
+    font-size: 13px;
+	color: #FFC2D9;
+	background-color: #212121;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+	height: 160px;
+}
+.c-form__submit {
+	text-align: center;
+    margin-top: 50px;
+}
+.c-form__submit button {
+	font-size: 14px;
+    font-weight: normal;
+	color: #FFC2D9;
+	background-color: #212121;
+	border: solid 1px #212121;
+	border-radius: 5px;
+	padding: 5px 100px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.c-form__submit button:hover {
+	color: #212121;
+	background-color: transparent;
+}
+
+@media (min-width: 640px) {
+	.c-form__item {
+		flex-wrap: nowrap;
+	}
+	.c-form__label {
+		width: 40%;
+	}
+	.c-form__input {
+		width: 55%;
+	}
+}
+
+
+
+
+/* 下層ページ_thanks */
+#thanks_page{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+}
+#thanks_page h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Oswald";
+    margin: 30px 0 50px 0px;
+}
+#thanks_page p{
+    font-size: 15px;
+    text-align: center;
+}
+.thanks_botton{
+    margin: 0 auto;
+    align-items: center;
+}
+.botton_top{
+    font-size: 14px;
+    font-weight: normal;
+	color: #212121;
+	background-color: #FFC2D9;
+	border: solid 1px #212121;
+	border-radius: 20px;
+	padding: 10px 100px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.botton_top:hover {
+	color: #FFC2D9;
+	background-color: #212121;
 }
 
