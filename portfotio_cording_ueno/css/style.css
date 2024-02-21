@@ -106,10 +106,34 @@ body{
 	padding: 10px 100px;
 	transition: 0.4s;
 	cursor: pointer;
+    position: relative;
 }
 .about_botton2:hover {
 	color: #FFC2D9;
 	background-color: #212121;
+}
+.about_botton2::before{
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #212121;
+    border-radius: 100%;
+    right: 5%;
+}
+.about_botton2::after{
+    content: "\f105";
+    position: absolute;
+    top: 50%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #FFC2D9;
+    font-size: 20px;
+    right: 19px;
+
 }
 
 #line{
@@ -183,16 +207,23 @@ body{
     font-family: "Oswald";
     margin: 30px 0 20px 0;
 }
-#works .works_img{
+#works ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
-}
-#works img{
     justify-content: center;
     align-items: center;
+    gap: 10%;
+}
+#works li{
     width: 45%;
     margin: 20px 0;
+}
+#works img:hover {
+	color: #FFC2D9;
+    width: 500px;
+    height: 105px;
+	background-color: #212121;
+    /* opacity: 0.5 ; */
 }
 
 
@@ -252,7 +283,7 @@ footer{
   /* 4.文字のスタイルを設定 */
     color: #212121;
     font-size: 15px;
-    font-weight: medium;
+    font-weight: bold;
 }
 
 .copy .footer_nav ul{
@@ -285,10 +316,10 @@ footer{
 .about_p{
     display: flex;
     align-items: center;
-    max-width: 1100px;
+    /* max-width: 1100px; */
 }
 .about_p img{
-    width: 33%;
+    width: 17%;
 }
 .about_p p{
     width: 700px;
@@ -303,7 +334,7 @@ footer{
 .about_p span{
     font-size: 30px;
     font-family: "Oswald";
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #about_career{
@@ -337,6 +368,21 @@ footer{
     font-size: 30px;
     font-family: "Oswald";
 }
+/* .about_career_text ::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #608EAE;
+    position: absolute;
+    left: 106px;
+    top: 40px;
+    border-radius: 100%;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+} */
 
 #about_interests{
     max-width: 1100px;
@@ -352,18 +398,41 @@ footer{
 .about_interests_img{
     display: flex;
     flex-wrap: wrap;
-    max-width: 990px;
+    max-width: 950px;
     margin: 0 auto;
-    gap: 8%;
+    gap: 5%;
 }
-
 .about_interests_img img{
     justify-content: center;
     align-items: center;
-    width: 28%;
-    margin: 70px 0 0 0;
+    width: 30%;
+    margin: 50px 0 0 0;
 }
 
+.about_interests_img img:hover {
+	color: #FFC2D9;
+    width: 285px;
+    border-radius: 50%;
+	background-color: #212121;
+    /* opacity: 0.5 ; */
+}
+/* #about_interests .hover-text {
+    position:    absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color:    rgba(0,0,0,0.65);
+    透明にして表示させない
+    opacity: 0;
+    ホバーの動き方
+    transition: .3s ease-in-out;
+}
+#about_interests .hover-text p {
+    font-size: 22px;
+    padding: 10px 20px;
+} */
 
 
 
@@ -407,7 +476,7 @@ footer{
 
 
 
-/* 下層ページ_works */
+/* 下層ページ_contact */
 #contact_page{
     max-width: 1100px;
     margin: 30px auto;
