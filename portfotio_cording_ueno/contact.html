@@ -7,6 +7,9 @@
 
     <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,8 +23,8 @@
             <nav class="pc_nav">
                 <ul>
                     <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./index.html#skill">SKILL</a></li>
+                    <li><a href="./index.html#works">WORKS</a></li>
                     <li><div class="botton"><a href="./contact.html">CONTACT</a></div></li>
                 </ul>
             </nav>
@@ -39,7 +42,7 @@
             <input
                 class="c-form__input"
                 id="field-name"
-                placeholder="株式会社 山田"
+                placeholder=""
                 type="text"
                 required="required"
             />
@@ -51,7 +54,7 @@
             <input
                 class="c-form__input"
                 id="field-mail"
-                placeholder="[email protected]"
+                placeholder=""
                 type="email"
                 required="required"
             />
@@ -62,21 +65,18 @@
             <input
                 class="c-form__input"
                 id="field-name"
-                placeholder="株式会社 山田"
+                placeholder=""
                 type="text"
                 required="required"
             />
         </div>
         <div class="c-form__item">
-            <label class="c-form__label" for="field-message">Contact　お問い合わせ</label>
+            <label class="c-form__label" for="field-message">Contact　お問い合わせ<span class="c-form__required">必須</span></label>
             <textarea
                 class="c-form__input"
                 id="field-message"
-                placeholder="お問い合わせ内容"
+                placeholder=""
             ></textarea>
-        </div>
-        <div class="c-form__submit">
-            <button type="submit">送信</button>
         </div>
         <div class="c-form__submit">
             <a href="./thanks.html" class="about_botton2">送信</a>
@@ -93,9 +93,9 @@
             <div class="footer_text">
                 <nav class="footer_nav">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#skill">SKILL</a></li>
-                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./index.html#skill">SKILL</a></li>
+                        <li><a href="./index.html#works">WORKS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -106,7 +106,7 @@
                     <ul>
                         <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
                         <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
-                        <li><div class="botton"><a href="">CONTACT</a></div></li>
+                        <li><div class="botton"><a href="./contact.html">CONTACT</a></div></li>
                     </ul>
                 </nav>
             </div>

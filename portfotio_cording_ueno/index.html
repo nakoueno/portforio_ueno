@@ -7,11 +7,16 @@
     </title>
 
     <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
+
     <header id="header">
         <div class="header_inner">
             <h1 class="logo">
@@ -24,10 +29,43 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skill">SKILL</a></li>
                     <li><a href="#works">WORKS</a></li>
-                    <li><div class="botton"><a href="../portfotio_cording_ueno/contact.html">CONTACT</a></div></li>
+                    <li><div class="botton"><a href="./contact.html">CONTACT</a></div></li>
                 </ul>
             </nav>
         </div>
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <div class="sp_nav">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./image/logo_2.png" alt="ロゴ">
+                </a>
+            </h1>
+        <nav class="sp_nav_li">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#works">WORKS</a></li>
+            </ul>
+        </nav>
+    <div class="sp_nav_copy">
+        <div class="sp_nav_footer_sns">
+            <nav class="sp_nav_footer_nav">
+                <ul>
+                    <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
+                    <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
+                    <li><div class="sp_nav_botton"><a href="./contact.html">CONTACT</a></div></li>
+                </ul>
+            </nav>
+        </div>
+        <small>© 2024 nakoueno</small>
+    </div>
+</div>
+
+
+
+
         <div class="main_img">
             <img src="./image/main.png" alt="メイン画像">
         </div>
@@ -38,7 +76,7 @@
     </header>    
     
     <section id="about">
-        <div class="about1"><img src="./image/picture_3.png" alt="自分の写真"></div>
+        <div class="about1"><img src="./image/picture_1.png" alt="自分の写真"></div>
         <div class="about_main">
             <h2>ABOUT</h2>
             <p>はじめまして！ 上野那子（うえのなこ）と申します。
@@ -48,10 +86,25 @@
             WEB担当で培ったデザイン力、マーケティング力を強みとしています。
             お話することが大好き！なので、気軽になんでもご相談ください。</p>
             <div class="about">
-                <a href="../portfotio_cording_ueno/about.html" class="about_botton2">MORE</a>
+                <a href="./about.html" class="about_botton2">MORE</a>
             </div>
         </div>
     </section>
+
+    <section id="about_sp">
+        <h2>ABOUT</h2>
+        <img src="./image/picture_2.png" alt="自分の写真">
+            <p>はじめまして！ 上野那子（うえのなこ）と申します。
+            宮城県の田舎で生まれ育ち、おしゃれが大好きな母の影響を受け、
+            アパレル企業に10年間勤めてまいりました。
+            接客業で培ったヒアリング力、アドバイス力、
+            WEB担当で培ったデザイン力、マーケティング力を強みとしています。
+            お話することが大好き！なので、気軽になんでもご相談ください。</p>
+            <a href="./about.html" class="about_botton2">MORE</a>
+    </section>
+
+
+
     <section id="line">
         <p><img src="./image/line_1.png" alt="ライン"></p>
     </section>
@@ -97,12 +150,59 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="../portfotio_cording_ueno/works.html"><img src="./image/works_1.png" alt="works1"></a></li>
-                    <li><a href=""><img src="./image/works_2.png" alt="works1"></a></li>
-                    <li><a href=""><img src="./image/works_3.png" alt="works1"></a></li>
-                    <li><a href=""><img src="./image/works_4.png" alt="works1"></a></li>
-                    <li><a href=""><img src="./image/works_1.png" alt="works1"></a></li>
-                    <li><a href=""><img src="./image/works_1.png" alt="works1"></a></li>
+                    <li><a href="./works_1.html">
+                        <img src="./image/works_1.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                LIFE design 様<br>
+                                <span>web design</span>
+                            </span>
+                        </p>
+                        </a></li>
+                    <li><a href="./works_2.html"><img src="./image/works_2.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                WORKERS 様<br>
+                                <span>web design</span>
+                            </span>
+                        </p>
+                        </a></li>
+                    <li><a href="./works_3.html"><img src="./image/works_3.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                DESIGN CAFE 様<br>
+                                <span>cording</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_4.html"><img src="./image/works_4.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                My portforio<br>
+                                <span>web design / cording</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_5.html"><img src="./image/works_5.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                デザスタmobile 様<br>
+                                <span>banner design</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_6.html"><img src="./image/works_6.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                デラックスバーガー<br>
+                                <span>banner design</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -134,7 +234,7 @@
                     <ul>
                         <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
                         <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
-                        <li><div class="botton"><a href="../portfotio_cording_ueno/contact.html">CONTACT</a></div></li>
+                        <li><div class="botton"><a href="./contact.html">CONTACT</a></div></li>
                     </ul>
                 </nav>
             </div>
@@ -142,5 +242,17 @@
         </div>
 
     </footer>
+
+
+    <script>
+        $(function () {
+
+            $(".hamburger").on("click", function(){
+            $(".sp_nav").fadeToggle();
+            $(".hamburger").toggleClass("open");
+            });
+        });
+    </script>
+
 </body>
 </html>
