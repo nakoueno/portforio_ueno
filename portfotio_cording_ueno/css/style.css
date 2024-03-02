@@ -8,7 +8,15 @@ body{
     text-align: center;
     vertical-align: middle;
     margin: 100px 0 73px;
+
+    animation: bounce .3s ease 10 alternate;
 }
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-20px);}
+  }
+
 .main_text{
     text-align: center;
 }
@@ -55,7 +63,7 @@ body{
 .botton:hover {
 	color: #212121;
 	background-color: #FFC2D9;
-    border-radius: 1px;
+    /* border-radius: 1px; */
     border:1px solid #212121;
     border-radius: 50px;
 }
@@ -216,6 +224,9 @@ body{
     }
 }
 
+#works_sp{
+    display: none;
+}
 #works{
     max-width: 1100px;
     margin: 0 auto;
@@ -275,7 +286,7 @@ body{
     height: 105px;
     background-color: #212121;
     opacity:		0.9;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     color: #FFC2D9;
 }
 .works-hover__inner:hover::after{
@@ -356,8 +367,77 @@ footer{
     text-align: center;
     color: #FFC2D9;
 }
+.totop{
+    position: fixed;
+    bottom: -40px;
+    right: -40px;
+    width: 13%;
+}
+.totop img{
+    animation:13s linear infinite rotation1;
+    }
+.totop::before{
+    position: absolute;
+    content: url(../image/arrow2.svg);
+    width: 20%;
+    height: 20%;
+    top: 35%;
+    /* transform: translateY(25%); */
+    left: 40%;
+    /* transform: translateX(-50%); */
+    }
+@keyframes rotation1{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+    }
+@media screen and (max-width:1000px) {
+    .totop{
+        bottom: -30px;
+        right: -30px;
+    }
+    }
 
-
+.scroll {
+    position: fixed;
+    /* position: absolute; */
+    top: 77%;
+    left: 3%;
+    bottom: 2em;
+           /* //丁度よく下側に設置するのにposition+bottomプロパティを使用 */
+    width: 3em;
+    height: 3em;
+           /* //スクロールボタンのタップorクリックを受け付けるサイズ */
+    span {
+        width: 1em;
+        height: 1em;
+        font-size: 20px;
+        color: #FF52B7;
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        position: absolute;
+    }
+    }
+.arrow {
+    position: absolute;
+    top: 3em;
+    /* left: 0.5em; */
+    animation: 1.8s arrow-animation infinite;
+           /* //今回は矢印の長さがアニメーション対象なので、設定対象はこのブロック。 */
+    width: 0;
+    height: 5em;
+    border: .5px solid #FF52B7;
+           /* //実質↑の線幅×2が線部分の幅 */
+    }
+       
+       /* // 矢印が伸びるアニメーション */
+       @keyframes arrow-animation {
+        0% {
+          height: 1em;
+        }
+        66% {
+          height: 5em;
+        }
+       }
 
 
 /* 下層ページ_about */
@@ -440,7 +520,9 @@ footer{
     left: -77px;
 }
 
-
+#about_interests_sp{
+    display: none;
+}
 #about_interests{
     max-width: 1100px;
     margin: 100px auto;
@@ -468,9 +550,13 @@ footer{
 	position:		relative;	/* 相対位置指定 */
 }
 .about_img .caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    height: 100%;
 	font-size:		180%;
 	text-align: 		center;
-	padding-top:		120px;
 	color:			#FFC2D9;
 }
 .about_img .mask {
@@ -722,10 +808,13 @@ textarea.c-form__input {
 }
 .open span::before{
     transform: rotate(45deg);
+    background-color: #FFC2D9;
     top: 0;
+    
 }
 .open span::after{
     transform: rotate(-45deg);
+    background-color: #FFC2D9;
     top: 0;
 }
 
@@ -736,9 +825,10 @@ textarea.c-form__input {
     background-color: #212121;
     opacity:		0.9;
     z-index: 999;
+    top: 0;
 }
 .sp_nav h1{
-    margin: 50px 50px;
+    margin: 20px 50px 100px 50px;
 }
 .sp_nav_li ul{
     height: 100%;
@@ -842,8 +932,27 @@ textarea.c-form__input {
     height: 150px;
 }
 
-
-#works li{
+#works{
+    display: none;
+}
+#works_sp{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+#works_sp h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 20px 0;
+}
+#works_sp ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#works_sp li{
     width: 84%;
     margin: 20px 0;
     filter: drop-shadow(0px 10px 7px #c19696);
@@ -851,10 +960,29 @@ textarea.c-form__input {
     opacity: 1;
     margin-bottom: 70px;
 }
-.works-hover{
-    display: none;
+#works_sp li p{
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 30px;
 }
-
+#works_sp span{
+    font-size: 14px;
+}
+.works_text span::before {
+    position: absolute;
+    content: url(../image/arrow3.svg);
+    z-index: 9999;
+    width: 11px;
+    height: 22px;
+    right: 20%;
+    top: 90%;
+}
+@media screen and (max-width:580px) {
+    .works_text span::before {
+        right: 5%;
+        top: 85%;
+    }
+}
 
 
 .footer{
@@ -928,27 +1056,64 @@ textarea.c-form__input {
     left: -62px;
 }
 
-
-#about_interests h2{
+#about_interests{
+    display: none;
+}
+#about_interests_sp{
+    display: block;
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 10px;
+}
+#about_interests_sp h2{
     text-align: center;
+    font-size: 45px;
+    font-family: "Oswald";
+    margin: 30px 0 0 0;
 }
-.about_interests_img{
-    max-width: 80%;
-    gap: 10%;
+.about_interests_img ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+/* .about_interests_img li{
+    width: 84%;
+    margin: 20px 0;
+    filter: drop-shadow(0px 10px 7px #c19696);
+    position: relative;
+    opacity: 1;
+    margin-bottom: 70px;
+} */
 
-.about_img {
+/* .about_interests_img{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 10%;
+} */
+
+.about_interests_img img {
 	width:			45%;
+	height:			auto;
+	overflow:		hidden;
+    margin: 50px 0 0 0;
+	position:		relative;	/* 相対位置指定 */
 }
-.about_img .caption {
-    display: none;
+.caption{
+    color: #212121;
 }
-.about_img .mask {
-    display: none;
-}
-.about_img:hover .mask {
-    display: none;
-}
+/* .about_img p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    height: 100%;
+	font-size:		180%;
+	text-align: 		center;
+	color:			#FFC2D9;
+} */
 
 
 

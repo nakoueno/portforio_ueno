@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -29,6 +30,35 @@
                 </ul>
             </nav>
         </div>
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <div class="sp_nav">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./image/logo_2.png" alt="ロゴ">
+                </a>
+            </h1>
+        <nav class="sp_nav_li">
+            <ul>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./index.html#skill">SKILL</a></li>
+                <li><a href="./index.html#works_sp">WORKS</a></li>
+            </ul>
+        </nav>
+    <div class="sp_nav_copy">
+        <div class="sp_nav_footer_sns">
+            <nav class="sp_nav_footer_nav">
+                <ul>
+                    <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
+                    <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
+                    <li><div class="sp_nav_botton"><a href="./contact.html">CONTACT</a></div></li>
+                </ul>
+            </nav>
+        </div>
+        <small>© 2024 nakoueno</small>
+    </div>
+</div>
     </header>
     <section id="contact_page">
         <h2>CONTACT</h2>
@@ -82,6 +112,10 @@
             <a href="./thanks.html" class="about_botton2">送信</a>
         </div>
     </form>
+    <div class="totop">
+        <a href="#header">
+        <img src="./image/scroll.png" alt="TOPに戻る"></a>
+    </div>
 
 
 
@@ -95,7 +129,7 @@
                     <ul>
                         <li><a href="./about.html">ABOUT</a></li>
                         <li><a href="./index.html#skill">SKILL</a></li>
-                        <li><a href="./index.html#works">WORKS</a></li>
+                        <li><a href="./index.html#works_sp">WORKS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -113,5 +147,14 @@
             <small>© 2024 nakoueno</small>
         </div>
     </footer>
+    <script>
+        $(function () {
+
+            $(".hamburger").on("click", function(){
+            $(".sp_nav").fadeToggle();
+            $(".hamburger").toggleClass("open");
+            });
+        });
+    </script>
 </body>
 </html>
