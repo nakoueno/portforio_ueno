@@ -65,7 +65,7 @@
                 <img src="./image/picture_2.png" alt="自分の写真">
                 <p><span>nakoueno<br></span>
                 はじめまして！ 上野那子（うえのなこ）と申します。
-                宮城県の田舎で生まれ育ち、おしゃれが大好きな母の影響を受け、
+                宮城県の田舎で生まれ育ち、おしゃれな母の影響を受け、
                 アパレル企業に10年間勤めてまいりました。
                 接客業で培ったヒアリング力、アドバイス力、
                 WEB担当で培ったデザイン力、マーケティング力を強みとしています。
@@ -90,38 +90,94 @@
     </section>
     <section id="about_interests">
         <h2>INTERESTS</h2>
-        <div class="about_interests_img">        
-            <div class="about_img">
+        <div class="about_interests_img">
+
+        <!-- オーバーレイ -->
+        <div id="overlay" class="overlay"></div>
+        <!-- モーダルウィンドウ1 -->
+        <div class="modal-window" data-id="modal1">
+            <div class="modal-text"><p><span>MUSIC</span><br>
+                LIVE、音楽フェスが大好き！<br>
+                様々なジャンルを聴きますが、９０年代の音楽がとくに好きです。<br>
+                larc~en~cielに夢中♡<br>
+                リズム感のない音痴のため、カラオケは苦手です...（笑）</p></div>
+            <button class="js-close button-close"></button>
+        </div>
+        <!-- モーダルウィンドウ2 -->
+        <div class="modal-window" data-id="modal2">
+            <div class="modal-text"><p><span>MOVIE</span><br>
+                週末仕事終わりに映画を見ることが好きです。<br>
+                ジャンルは様々ですが、洋画がメイン。<br>
+                ブラット・ピットが好きで、<br>
+                彼が主演の映画はほとんど観ています！</p></div>
+            <button class="js-close button-close"></button>
+        </div>
+        <!-- モーダルウィンドウ3 -->
+        <div class="modal-window" data-id="modal3">
+            <div class="modal-text"><p><span>READING</span><br>
+                時間がある時に一気読み派。<br>
+                ミステリーや警察小説が好きです。<br>
+                最近読んだのお気に入りは伊岡瞬さんの「本性」。</p></div>
+            <button class="js-close button-close"></button>
+        </div> 
+        <!-- モーダルウィンドウ1 -->
+        <div class="modal-window" data-id="modal4">
+            <div class="modal-text"><p><span>SPORTS</span><br>
+                スポーツ観戦が好きで、<br>
+                野球、サッカー、マラソンをテレビで観て応援しています！<br>
+                なかでも野球は球場にもよく足を運び、<br>
+                生の迫力や臨場感を楽しんでいます。</p></div>
+            <button class="js-close button-close"></button>
+        </div>
+        <!-- モーダルウィンドウ2 -->
+        <div class="modal-window" data-id="modal5">
+            <div class="modal-text"><p><span>SKINCARE</span><br>
+                スキンケアオタクです。<br>
+                いろいろなものを試したいので、顔が足りません（笑）<br>
+                おばあちゃんになってもツヤツヤたまご肌を目指しています！</p></div>
+            <button class="js-close button-close"></button>
+        </div>
+        <!-- モーダルウィンドウ3 -->
+        <div class="modal-window" data-id="modal6">
+            <div class="modal-text"><p><span>GYOZA</span><br>
+                餃子がとにかく大好き！<br>
+                週７餃子でも飽きません。たぶん。（笑）<br>
+                おいしい餃子やさんを開拓するのが趣味で、<br>
+                行ったお店をInstagramに載せているのでぜひ見てください♡</p></div>
+            <button class="js-close button-close"></button>
+        </div>         
+
+            <div class="about_img" data-id="1">
 	            <img src="./image/hobby_1.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">MUSIC</div>
 	                </div>
             </div>
-            <div class="about_img">
+            <div class="about_img" data-id="2">
 	            <img src="./image/hobby_2.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">MOVIE</div>
 	                </div>
             </div>
-            <div class="about_img">
+            <div class="about_img" data-id="3">
 	            <img src="./image/hobby_3.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">READING</div>
 	                </div>
             </div>
-            <div class="about_img">
+            <div class="about_img" data-id="4">
 	            <img src="./image/hobby_4.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">SPORTS</div>
 	                </div>
             </div>
-            <div class="about_img">
+            <div class="about_img" data-id="5">
 	            <img src="./image/hobby_5.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">SKINCARE</div>
 	                </div>
             </div>
-            <div class="about_img">
+            <div class="about_img" data-id="6">
 	            <img src="./image/hobby_6.png" alt="hobby_1" />
 	                <div class="mask">
 		                <div class="caption">GYOZA</div>
@@ -175,8 +231,15 @@
             <div class="footer_logo">
                 <img src="./image/logo_2.png" alt="ロゴ">
             </div>
-            <div class="footer_text">
+            <div>
                 <nav class="footer_nav">
+                    <ul>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./index.html#skill">SKILL</a></li>
+                        <li><a href="./index.html#works">WORKS</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer_nav_sp">
                     <ul>
                         <li><a href="./about.html">ABOUT</a></li>
                         <li><a href="./index.html#skill">SKILL</a></li>
@@ -187,7 +250,7 @@
         </div>
         <div class="copy">
             <div class="footer_sns">
-                <nav class="footer_nav">
+                <nav class="footer_sns_nav">
                     <ul>
                         <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
                         <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
@@ -197,6 +260,7 @@
             </div>
             <small>© 2024 nakoueno</small>
         </div>
+
     </footer>
     <script>
         $(function () {
@@ -206,6 +270,18 @@
             $(".hamburger").toggleClass("open");
             });
         });
+        $(function () {
+  $('.about_img').click(function () {
+    $("body").addClass("no_scroll"); // 背景固定させるクラス付与
+    var id = $(this).data('id'); // 何番目のキャプション（モーダルウィンドウ）か認識
+    $('#overlay, .modal-window[data-id="modal' + id + '"]').fadeIn();
+  });
+  // オーバーレイクリックでもモーダルを閉じるように
+  $('.js-close , #overlay').click(function () {
+    $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
+    $('#overlay, .modal-window').fadeOut();
+  });
+});    
     </script>
 </body>
 </html>

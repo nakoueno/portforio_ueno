@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -83,12 +84,12 @@
 
     </header>    
     
-    <section id="about">
+    <section id="about" data-aos=”fade-up”>
         <div class="about1"><img src="./image/picture_1.png" alt="自分の写真"></div>
         <div class="about_main">
             <h2>ABOUT</h2>
             <p>はじめまして！ 上野那子（うえのなこ）と申します。
-            宮城県の田舎で生まれ育ち、おしゃれが大好きな母の影響を受け、
+            宮城県の田舎で生まれ育ち、おしゃれな母の影響を受け、
             アパレル企業に10年間勤めてまいりました。
             接客業で培ったヒアリング力、アドバイス力、
             WEB担当で培ったデザイン力、マーケティング力を強みとしています。
@@ -103,7 +104,7 @@
         <h2>ABOUT</h2>
         <img src="./image/picture_2.png" alt="自分の写真">
             <p>はじめまして！ 上野那子（うえのなこ）と申します。
-            宮城県の田舎で生まれ育ち、おしゃれが大好きな母の影響を受け、
+            宮城県の田舎で生まれ育ち、おしゃれな母の影響を受け、
             アパレル企業に10年間勤めてまいりました。
             接客業で培ったヒアリング力、アドバイス力、
             WEB担当で培ったデザイン力、マーケティング力を強みとしています。
@@ -142,7 +143,7 @@
                     <div class="list">
                         <h4>COLOR</h4>
                         <img src="./image/skill_3.png" alt="color">
-                        <p>2023年 新パーソナルカラー検定2級取得。色のしくみや心理効果、配色について学んできたため、WEBデザインの配色に悩んだときはぜひご相談ください。
+                        <p>2023年に新パーソナルカラー検定2級取得。色のしくみや心理効果、配色について学んでいます。WEBデザインの配色に悩んだときはぜひご相談ください。
                             1級取得を目指し勉強を続けています！
                         </p>
                     </div>
@@ -155,7 +156,7 @@
     </section>
     <section id="works">
         <h2 class="works">WORKS</h2>
-        <div>
+        <div id="works_div1">
             <nav>
                 <ul>
                     <li><a href="./works_1.html">
@@ -213,6 +214,92 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div id="works_div2">
+            <nav>
+                <ul>
+                    <li><a href="./works_1.html">
+                        <img src="./image/works_2.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                LIFE design 様<br>
+                                <span>web design</span>
+                            </span>
+                        </p>
+                        </a></li>
+                    <li><a href="./works_2.html"><img src="./image/works_2.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                WORKERS 様<br>
+                                <span>web design</span>
+                            </span>
+                        </p>
+                        </a></li>
+                    <li><a href="./works_3.html"><img src="./image/works_3.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                DESIGN CAFE 様<br>
+                                <span>cording</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_4.html"><img src="./image/works_4.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                My portforio<br>
+                                <span>web design / cording</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_5.html"><img src="./image/works_5.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                デザスタmobile 様<br>
+                                <span>banner design</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                    <li><a href="./works_6.html"><img src="./image/works_6.png" alt="works1">
+                        <p class="works-hover">
+                            <span class="works-hover__inner">
+                                デラックスバーガー<br>
+                                <span>banner design</span>
+                            </span>
+                        </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </section>
+        <div class="Pagination">
+            <nav>
+            <ul>
+            <li class="Pagination-Item">
+                <a class="Pagination-Item-Link" href="#works_div1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                </a>
+            </li>
+            <li class="Pagination-Item">
+                <a class="Pagination-Item-Link" href="#works_div1"><span>1</span></a>
+            </li>
+            <li class="Pagination-Item">
+                <a class="Pagination-Item-Link" href="#works_div2"><span>2</span></a>
+            </li>
+            <li class="Pagination-Item">
+                <a class="Pagination-Item-Link" href="#works_div2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        </nav>
         </div>
         <div class="totop">
             <a href="#header">
@@ -282,6 +369,13 @@
             <div>
                 <nav class="footer_nav">
                     <ul>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer_nav_sp">
+                    <ul>
                         <li><a href="#about_sp">ABOUT</a></li>
                         <li><a href="#skill">SKILL</a></li>
                         <li><a href="#works_sp">WORKS</a></li>
@@ -291,7 +385,7 @@
         </div>
         <div class="copy">
             <div class="footer_sns">
-                <nav class="footer_nav">
+                <nav class="footer_sns_nav">
                     <ul>
                         <li><a href=""><img src="./image/sns_1.png" alt="instagram"></a></li>
                         <li><a href=""><img src="./image/sns_2.png" alt="twitter"></a></li>
@@ -313,6 +407,8 @@
             $(".hamburger").toggleClass("open");
             });
         });
+
+        AOS.init();
     </script>
 
 </body>
