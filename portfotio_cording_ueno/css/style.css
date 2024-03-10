@@ -36,6 +36,8 @@ body{
 
 .main_text{
     text-align: center;
+    font-family: "Oswald";
+    font-size: 14px;
 }
 .main_text span{
     font-weight: bold;
