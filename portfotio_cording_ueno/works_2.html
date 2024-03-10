@@ -93,6 +93,12 @@
                     <img src="./image/works_2_2.png" alt="works_2_1">
                 </div>
             </div>
+            <div class="works_top">
+                <a href="./index.html#works" class="about_botton2">一覧へ戻る</a>
+            </div>
+            <div class="works_top_sp">
+                <a href="./index.html#works_sp" class="about_botton2">一覧へ戻る</a>
+            </div>
             <div class="totop">
                 <a href="#header">
                 <img src="./image/scroll.png" alt="TOPに戻る"></a>
@@ -146,6 +152,25 @@
             $(".hamburger").toggleClass("open");
             });
         });
+        var $pageTop = $(".totop");
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $pageTop.fadeIn();
+            } else {
+                $pageTop.fadeOut();
+            }
+        });
+        $pageTop.on("click", function () {
+            $("body,html").animate(
+                {
+                    scrollTop: 0,
+                },
+                300
+            );
+            return false;
+        });
+
+        AOS.init();
     </script>
 </body>
 </html>
