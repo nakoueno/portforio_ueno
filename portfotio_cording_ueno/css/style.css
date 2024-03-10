@@ -347,6 +347,76 @@ body{
     }
 }
 
+
+/* pegination */
+.p-blogList,.p-blogList-sp {
+    display: none;
+  }
+  .p-blogList.is-current,.p-blogList-sp.is-current {
+    display: flex;
+  }
+  .c-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 35px;
+    background: #ffc2d9;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+  .Pagination__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #212121;
+    background-color: #FFC2D9;
+    transition: .5s;
+  }
+  .Pagination__button.is-current {
+    background: #212121;
+    color: #ffc2d9;
+    pointer-events: none;
+    padding: 0 10px;
+  }
+  .Pagination {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Pagination > * + * {
+    margin-left: 12px;
+    background-color: #FFC2D9;
+    display: flex;
+      gap: 16px;
+  }
+  .Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 35px;
+    background: #ffc2d9;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+  .Pagination-Item-Link-Icon {
+    width: 20px;
+    color: #212121;
+  }
+  
+/* 
 .Pagination{
     max-width: 1100px;
     margin: 0 auto;
@@ -382,7 +452,7 @@ body{
 .Pagination-Item-Link:not(.isActive):hover {
     background: #212121;
     color: #FFC2D9;
-}
+} */
 
 
 
