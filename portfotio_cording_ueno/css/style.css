@@ -759,7 +759,7 @@ footer{
 }
 .works_p2 h3{
     font-size: 40px;
-    font-family: "YuGothic";
+    /* font-family: "YuGothic"; */
     font-weight: normal;
     margin: 80px 0 63px 0;
 }
@@ -788,8 +788,20 @@ footer{
 
 .works_img{
     display: flex;
-    max-width: 1100px;
-    margin-top: 50px;
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    gap: 5%;
+}
+.works_img_banner1{
+    display: flex;
+    max-width: 500px;
+    margin: 50px auto 0 auto;
+    gap: 5%;
+}
+.works_img_banner2{
+    display: flex;
+    max-width: 850px;
+    margin: 50px auto 0 auto;
     gap: 5%;
 }
 .works_img1{
@@ -944,7 +956,7 @@ textarea.c-form__input {
     align-items: center;
     max-width: 820px;
     margin: 100px 20px;
-    padding: 10px;
+    padding: 15px;
 }
 .line_2 img{
     width: 0 auto;
@@ -1079,7 +1091,7 @@ textarea.c-form__input {
     display: block;
     max-width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 #about_sp h2{
     font-size: 45px;
@@ -1096,7 +1108,7 @@ textarea.c-form__input {
     }
 }
 #about_sp p{
-    width: 90%;
+    width: 100%;
     font-size: 14px;
     font-family: "Oswald";
     font-weight: medium;
@@ -1106,8 +1118,9 @@ textarea.c-form__input {
     letter-spacing: 0.1em;
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:575px) {
 #skill ul{
+    padding: 15px;
     flex-direction: column;
     gap: 50px;
 }
@@ -1121,6 +1134,7 @@ textarea.c-form__input {
 }
 @media screen and (max-width:500px) {
     #skill ul{
+        padding: 15px;
         gap: 30px;
     }
     #skill li{
