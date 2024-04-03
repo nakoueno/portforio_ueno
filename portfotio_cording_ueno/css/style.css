@@ -30,7 +30,7 @@ body{
 }
 .mainvisual{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 .main_text_sp{
@@ -133,7 +133,7 @@ body{
     align-items: center;
     max-width: 852px;
     margin: 150px auto;
-    padding: 10px;
+    padding: 15px;
 }
 .about1 img{
     width: 320px;
@@ -218,7 +218,7 @@ body{
     align-items: center;
     max-width: 820px;
     margin: 100px auto;
-    padding: 10px;
+    padding: 15px;
 }
 .line img{
     width: 0 auto;
@@ -293,7 +293,7 @@ body{
 #works{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
 }
 #works h2{
     text-align: center;
@@ -521,7 +521,7 @@ footer{
 #about_page{
     max-width: 1100px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #about_page h2{
     text-align: left;
@@ -556,7 +556,7 @@ footer{
 #about_career{
     max-width: 1100px;
     margin: 100px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #about_career h2{
     text-align: left;
@@ -603,7 +603,7 @@ footer{
 #about_interests{
     max-width: 1100px;
     margin: 100px auto;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 #about_interests h2{
@@ -737,7 +737,7 @@ footer{
 #works_page{
     max-width: 1100px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #works_page h2{
     text-align: left;
@@ -823,7 +823,7 @@ footer{
 #contact_page{
     max-width: 1100px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #contact_page h2{
     text-align: left;
@@ -896,7 +896,7 @@ textarea.c-form__input {
 #thanks_page{
     max-width: 1100px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #thanks_page h2{
     text-align: center;
@@ -966,6 +966,8 @@ textarea.c-form__input {
 .pc_nav{
     display: none;
 }
+
+
 .hamburger{
     display: block;
     cursor: pointer;
@@ -1026,6 +1028,7 @@ textarea.c-form__input {
     z-index: 999;
     top: 0;
 }
+
 .sp_nav h1{
     margin: 20px 50px 100px 50px;
 }
@@ -1266,7 +1269,7 @@ textarea.c-form__input {
     display: block;
     max-width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 .about_p{
     display: block;
@@ -1301,7 +1304,7 @@ textarea.c-form__input {
     display: block;
     max-width: 100%;
     margin: 100px auto;
-    padding: 10px;
+    padding: 15px;
 }
 #about_interests_sp h2{
     text-align: center;
