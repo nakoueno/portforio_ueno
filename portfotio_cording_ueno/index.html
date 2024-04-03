@@ -45,9 +45,9 @@
             </h1>
         <nav class="sp_nav_li">
             <ul>
-                <li><a href="#about_sp">ABOUT</a></li>
-                <li><a href="#skill">SKILL</a></li>
-                <li><a href="#works_sp">WORKS</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./index.html">SKILL</a></li>
+                <li><a href="./works_all.html">WORKS</a></li>
             </ul>
         </nav>
     <div class="sp_nav_copy">
@@ -341,6 +341,17 @@ $(".hamburger").on("click", function(){
     $(".hamburger").toggleClass("open");
 });
 });
+
+$(function() {
+  $('.hamburger').click(function() {
+    if ( $('.hamburger').prop('checked') == false ) {
+      $('body').css('overflow','auto');
+    } else {
+      $('body').css('overflow','hidden');
+    }
+  });
+});
+
 
         var $pageTop = $(".totop");
         $(window).scroll(function () {

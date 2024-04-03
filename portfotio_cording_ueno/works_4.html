@@ -150,6 +150,17 @@
             $(".hamburger").toggleClass("open");
             });
         });
+
+        $(function() {
+  $('.hamburger').click(function() {
+    if ( $('.hamburger').prop('checked') == false ) {
+      $('body').css('overflow','auto');
+    } else {
+      $('body').css('overflow','hidden');
+    }
+  });
+});
+
         var $pageTop = $(".totop");
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {

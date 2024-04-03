@@ -340,6 +340,19 @@
             $(".hamburger").toggleClass("open");
             });
         });
+
+        $(function() {
+  $('.hamburger').click(function() {
+    if ( $('.hamburger').prop('checked') == false ) {
+      $('body').css('overflow','auto');
+    } else {
+      $('body').css('overflow','hidden');
+    }
+  });
+});
+
+
+
         $(function () {
     $('.about_img').click(function () {
     $("body").addClass("no_scroll"); // 背景固定させるクラス付与
