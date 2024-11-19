@@ -8,7 +8,7 @@ body{
     text-align: center;
     vertical-align: middle;
     margin: 100px 0 50px;
-    animation: anim 1s forwards;
+    /* animation: anim 1s forwards; */
 }
 
 .main_img_2{
@@ -794,14 +794,14 @@ footer{
 }
 .works_img_banner1{
     display: flex;
-    max-width: 500px;
+    max-width: 850px;
     margin: 50px auto 0 auto;
     gap: 5%;
 }
 .works_img_banner2{
     display: flex;
     max-width: 850px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     gap: 5%;
 }
 .works_img1{
@@ -941,7 +941,7 @@ textarea.c-form__input {
     text-align: center;
     vertical-align: middle;
     margin: 0 0 50px 0;
-    animation: anim 1s forwards;
+    /* animation: anim 1s forwards; */
 }
 
 .main_img{
