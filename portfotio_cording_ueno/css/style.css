@@ -2,6 +2,7 @@
 
 body{
     background-color: #FFC2D9;
+    overflow-x: hidden;
 }
 
 .main_img{
@@ -1137,8 +1138,8 @@ textarea.c-form__input {
     font-size: 14px;
     font-family: "Oswald";
     font-weight: medium;
-    text-align: left;
-    margin: 50px 50px;
+    text-align: center;
+    margin: 50px auto;
     line-height: 1.8;
     letter-spacing: 0.1em;
 }
