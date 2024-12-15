@@ -854,6 +854,7 @@ footer{
     width: 100%;
 }
 .works_p2 td:nth-child(2n+1){
+        padding: 0 0 10px 0;
     width: 100%;
 }
 
